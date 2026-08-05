@@ -1,0 +1,1 @@
+# This is a diary of journey to complete dsa from scratch using python # 
