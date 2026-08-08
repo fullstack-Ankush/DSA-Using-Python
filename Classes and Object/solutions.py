@@ -50,3 +50,37 @@ class Rectangle:
 r1 = Rectangle(10,4)
 print(r1.getArea())
 
+# solution 4
+
+class Book:
+    def __init__(self,id,title,price):
+        self.bookid = id
+        self.title = title
+        self.price = price
+
+    def showVariable(self):
+        print(self.bookid,self.title,self.price,sep="\n")
+
+
+b1 = Book(1,"Learn Python the hard way",800)
+b1.showVariable()
+
+
+# solution 5
+
+class Team:
+    players = []
+    
+    def inputplayers(self,n):
+        for i in range(n):
+            self.players.append(input("Enter the player name"))
+            
+
+    def showplayers(self):
+        for i in self.players:
+            print(i)
+
+
+t1 = Team()
+t1.inputplayers(4)
+t1.showplayers()
