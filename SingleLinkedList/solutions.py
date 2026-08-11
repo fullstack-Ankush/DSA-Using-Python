@@ -36,3 +36,33 @@ class SLL:
                 temp = temp.next
             temp.next = n    
 
+    # solution 6
+
+    def search(self,data):
+        temp = self.start
+
+        while(temp.next != None):
+            if (temp.item == data):
+                return temp
+            temp = temp.next
+        return None
+
+    #solution 7
+
+    def insert_after(self,data,Temp):
+
+        # temp = self.start
+        while(Temp is not None):
+            n = Node(data,Temp.next)
+            Temp.next = n
+
+    # solution 8
+
+    def print_SLL(self):
+        temp = self.start
+        while(temp != None):
+            print(temp.data,end=' ')
+            temp =temp.next
+        
+
+
