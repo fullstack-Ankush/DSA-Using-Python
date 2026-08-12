@@ -57,3 +57,7 @@ class DLL:
                 return temp
 
         return None
+
+
+    # solution 7
+    
